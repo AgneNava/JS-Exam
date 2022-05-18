@@ -23,8 +23,11 @@ function renderUsers(users) {
     const userLogin = document.createElement("h3");
     userLogin.innerText = user.login;
 
-    const userAvatarUrl = document.createElement("p");
-    userAvatarUrl.innerText = user.avatar_url;
+    const userAvatarUrl = document.createElement("img");
+    userAvatarUrl.src = user.avatar_url;
+    userAvatarUrl.style.width = "5rem";
+    userAvatarUrl.style.height = "auto";
+    userAvatarUrl.style.margin = "0.5rem";
 
     const userCard = document.createElement("div");
     userCard.setAttribute("class", "user-card");
