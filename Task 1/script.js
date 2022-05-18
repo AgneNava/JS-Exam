@@ -11,3 +11,22 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 const weightConverter = document.querySelector("form");
 const kilogramsInput = document.getElementById("search");
 const outputDiv = document.getElementById("output");
+
+weightConverter.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const kilogramsEntered = Number(kilogramsInput.value);
+
+  outputDiv.innerText = "";
+
+  const resultPounds = document.createElement("p");
+  resultPounds.setAttribute("class", "output-pounds");
+  resultPounds.innerText = `1.Svarai (lb): ${kilogramsEntered * 2.2046}`;
+
+  const resultGrams = document.createElement("p");
+  resultGrams.setAttribute("class", "output-grams");
+  resultGrams.innerText = `2.Gramai (g): ${kilogramsEntered / 0.001}`;
+
+  const resultOunces = document.createElement("p");
+  resultOunces.innerText = `3.Uncijos (oz): ${kilogramsEntered * 35.274}`;
+  outputDiv.append(resultPounds, resultGrams, resultOunces);
+});
