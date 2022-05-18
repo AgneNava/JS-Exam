@@ -4,6 +4,7 @@ Sutvarkykite užduoties "Task 10" esančius failus taip, kad veiktų žemiau pat
 
 import composition from "./modules/math/composition.js";
 import division from "./modules/math/division.js";
+import substraction from "./modules/math/subtraction.js";
 
 let a = composition(one, four);
 let b = division(four, two);
