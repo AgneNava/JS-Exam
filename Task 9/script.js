@@ -17,13 +17,14 @@ class Movie {
     this.budget = Number(budget);
   }
 
-  get budgetAmount() {
-    return this.wasExpensive();
-  }
+  // get budgetAmount() {
+  //   return this.wasExpensive();
+  // }
   wasExpensive() {
     return this.budget > 100000000 ? true : false;
   }
 }
 
 const batman = new Movie("Batman", "Almodovar", 500000000);
-console.log(batman.title, batman.director, batman.budget, batman.budgetAmount);
+console.log(batman);
+console.log(batman.wasExpensive());
