@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -26,4 +26,19 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+
+.cars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.car-container {
+  width: 45%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(135, 162, 250);
+  border-radius: 0.5rem;
+  box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
