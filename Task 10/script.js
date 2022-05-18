@@ -8,6 +8,8 @@ import division from "./modules/math/division.js";
 import substraction from "./modules/math/subtraction.js";
 import multiplication from "./modules/math/multiplication.js";
 
+//console.log(one, two, three, four, five);
+
 let a = composition(one, four);
 let b = division(four, two);
 let c = substraction(three, two);
