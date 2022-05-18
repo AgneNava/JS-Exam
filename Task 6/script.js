@@ -23,3 +23,6 @@ const users = [
 const getUserAverageAge = users.reduce((r, c) => r + c.age, 0) / users.length;
 
 console.log(getUserAverageAge);
+
+const getUsersNames = users.map((person) => person.name);
+console.log(getUsersNames);
