@@ -20,9 +20,16 @@ const users = [
   { id: "9", name: "Daniel Cane", age: 51 },
 ];
 
-const getUserAverageAge = users.reduce((r, c) => r + c.age, 0) / users.length;
+function getUserAverageAge() {
+  const averageAge = users.reduce((r, c) => r + c.age, 0) / users.length;
+  console.log(averageAge);
+}
 
-console.log(getUserAverageAge);
+console.log(getUserAverageAge());
 
-const getUsersNames = users.map((person) => person.name);
-console.log(getUsersNames);
+function getUsersNames() {
+  const usersNames = users.map((person) => person.name);
+  console.log(usersNames);
+}
+
+console.log(getUsersNames());
