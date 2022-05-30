@@ -66,3 +66,20 @@ document.getElementById("btn").addEventListener("click", () => {
 
   document.getElementById("otput").innerText = "";
 });
+
+// ARNBO ATSAKYMAS:
+
+// fetch(ENDPOINT).then((response) => {
+//   if(response.ok) return response.json();
+//   else{ throw new Error('Nepavyko prisijungti')}
+// }).then(data => {
+//   users = data;
+// }).catch((error) => console.error("Klaida:", error))
+
+// document.getElementById('btn').addEventListener('click', function(){
+//   document.getElementById('output').innerHTML = ``
+//   for(let x = 0; x < users.length; x++)
+//   {
+//       document.getElementById('output').innerHTML += `<div style="border-bottom:groove"><img src="${users[x]['avatar_url']}" class="imgUser"><div class="idUser">${users[x]['login']}</div></div>`
+//   }
+// })

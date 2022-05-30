@@ -33,3 +33,28 @@ function getUsersNames() {
 }
 
 console.log(getUsersNames());
+
+//ARNO ATSAKYMAS:
+
+// console.log('Vidutinis amžius:',getUserAverageAge(users))
+// console.log('Naujas array:', getUsersNames(users))
+
+// function getUserAverageAge(given){
+//   var up = 0;
+//   var down = 0;
+//   for(let i=0; i<given.length; i++)
+//   {
+//     up += parseInt(given[i]['age'])
+//     down = i;
+//   }
+//   return (up/(down+1)).toFixed(1)
+// }
+
+// function getUsersNames(given){
+//   var newArray = []
+//   for(let x=0; x<given.length; x++)
+//   {
+//     newArray.push(given[x]['name'])
+//   }
+//   return newArray;
+// }

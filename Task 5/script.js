@@ -35,3 +35,16 @@ function filterAdults() {
   console.log(adultUsers);
 }
 console.log(filterAdults());
+
+//ARNO ATSAKYMAS:
+
+// console.log(users.filter(filterDogOwners))
+// console.log(users.filter(filterAdults))
+
+// function filterDogOwners(x){
+//   return x.hasDog == true;
+// }
+
+// function filterAdults(x){
+//   return x.age >= 18;
+// }
