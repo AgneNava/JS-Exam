@@ -19,3 +19,11 @@ function showObjectKeys() {
   console.log(objectKeys);
 }
 console.log(showObjectKeys());
+
+//ARNO ATSAKYMAS:
+
+// console.log(showObjectKeys(audi))
+
+// function showObjectKeys(given){
+//   return Object.keys(given);
+// }
